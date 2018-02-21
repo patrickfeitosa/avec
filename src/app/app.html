@@ -1,0 +1,28 @@
+<ion-menu [content]="content" >
+  <ion-header no-border>
+    <ion-toolbar class="no-padding">
+      <ion-title class="nav-menu">
+        <img src="../assets/imgs/logo-avec.png" alt="AVEC Logo" class="icone-menu">
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="nav-content">
+    <ion-list class="item-menu">
+      <button (click)="openPage(HomePage)">
+        <strong>Home</strong>
+      </button>
+
+      <button (click)="openPage(sobre)">
+        <strong>Sobre</strong>
+      </button>
+
+      <button>
+        <strong>Site</strong>
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
