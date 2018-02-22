@@ -8,11 +8,16 @@
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <ion-grid >
+    <ion-row>
+      <ion-col>
+        <ion-slides class="image-slider" (ionSlideDidChange)="slideChanged()" loop="true">
+          <ion-slide *ngFor="let foto of gallery">
+            <img src="http://static.salaovip.com.br/saloes/vip/galeria/originais/{{foto.foto}}">
+          </ion-slide>
+        </ion-slides>                
+        <button *ngFor="let index of gallery" (click)="goToSlide()"></button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
