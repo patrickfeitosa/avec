@@ -1,7 +1,49 @@
-.titulo{
-	text-align: center;
+.image-slider{
+		box-shadow: 0 1px 3px 1px #d0d0d0;
 }
-ion-slide img{
-	display:block;
-	max-width: 100%;
+
+.image-slider img{
+	max-height: 100%;
+	display: block;
+	height: auto;
+}
+
+//Estilização da paginação
+.swiper-pagination{
+	top: 238px; 
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+	padding: 3px;
+	background-color: transparent;
+	width: 15px;
+	height: 15px;
+	border: 1px solid #fff;
+	opacity:1;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active{
+	padding: 3px;
+	background-color: #fff;
+	width: 15px;
+	height: 15px;
+	border: 1px solid #fff;
+	opacity:1;
+}
+
+
+//Introdução
+.intro{
+	text-align: center;
+	font-size: 1.5em;
+	padding: 0 30px;
+}
+
+//Midia Sociais
+.social-midia img{
+	margin: 0 auto;
+}
+
+.icon-social-midia{
+	width: 30%;
 }

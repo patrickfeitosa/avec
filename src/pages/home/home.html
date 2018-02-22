@@ -7,17 +7,36 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <ion-grid >
+<ion-content>
+  <ion-grid>
     <ion-row>
-      <ion-col>
-        <ion-slides class="image-slider" (ionSlideDidChange)="slideChanged()" loop="true">
+      <ion-col> 
+        <ion-slides class="image-slider" loop pager>
           <ion-slide *ngFor="let foto of gallery">
             <img src="http://static.salaovip.com.br/saloes/vip/galeria/originais/{{foto.foto}}">
           </ion-slide>
-        </ion-slides>                
-        <button *ngFor="let index of gallery" (click)="goToSlide()"></button>
-      </ion-col>
+        </ion-slides> 
+      </ion-col> 
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col> 
+        <p class="intro">Bem vindo ao nosso aplicativo. <br>
+        Acima você pode rolar as imagens e ver algumas das nossas fotos, no menu você pode acessar nossos links rápidos e abaixo você pode seguir nossas redes sociais. Obrigado.</p>
+      </ion-col> 
+    </ion-row>
+
+    <ion-row class="social-midia">
+      <ion-col>
+        <img src="../assets/imgs/icone-facebook.png" color="main" class="icon-social-midia">
+      </ion-col> 
+      <ion-col> 
+        <img src="../assets/imgs/icone-linkedin.png" class="icon-social-midia">
+      </ion-col> 
+      <ion-col> 
+        <img src="../assets/imgs/icone-instagram.png" class="icon-social-midia">
+      </ion-col> 
     </ion-row>
   </ion-grid>
 </ion-content>
