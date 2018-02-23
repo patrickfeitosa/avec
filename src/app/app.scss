@@ -8,39 +8,56 @@
 	text-align: center;
 }
 
+.center{
+	margin: 0 auto;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
 /* Estilização do Menu */
 
 .nav-content{
 	background-color: color($colors, main);
+
 }
 
 .nav-menu{
-	height: 200px;	
+	height: 180px;	
 	background-color: #fff;
 	box-shadow: inset 0 -20px 10px -10px #d0d0d0;
 }
 
 .icone-menu{
 	display: block;
-	width: 35%;
+	width: 45%;
 	margin: 0 auto;
 }
 
 .item-menu{
 	background-color: #7900ab;
-	padding-top: 30px;
 }
 
 .item-menu button{
 	color: #fff;
 	background-color: color($colors, main);
 	padding: 30px 0;
-	width: 300px;
+	width: 230px;
 	margin: 0 auto;
 	display: block;
 	border-bottom: solid 1px #fff;
 	text-align: left;
 	font-size: 1.25em;
+}
+
+.item-menu a{
+	text-decoration: none;
+	color: currentColor;
 }
 
 .no-padding{

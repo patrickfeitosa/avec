@@ -10,7 +10,7 @@
 
 //Estilização da paginação
 .swiper-pagination{
-	top: 238px; 
+	top: 85%; 
 }
 
 .swiper-pagination .swiper-pagination-bullet {
@@ -35,15 +35,17 @@
 //Introdução
 .intro{
 	text-align: center;
-	font-size: 1.5em;
+	font-size: 1.35em;
 	padding: 0 30px;
 }
 
 //Midia Sociais
-.social-midia img{
-	margin: 0 auto;
+.social-midia .col:nth-child(1){
+	width:90px;
 }
 
 .icon-social-midia{
-	width: 30%;
+	width:40px;
+	height:40px;
+	display: block;
 }
