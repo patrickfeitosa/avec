@@ -11,8 +11,8 @@
   <ion-grid>
     <ion-row>
       <ion-col> 
-        <ion-slides class="image-slider" loop pager>
-          <ion-slide *ngFor="let foto of gallery">
+        <ion-slides pager>
+          <ion-slide class="image-slider" *ngFor="let foto of gallery">
             <img src="http://static.salaovip.com.br/saloes/vip/galeria/originais/{{foto.foto}}">
           </ion-slide>
         </ion-slides> 
@@ -32,13 +32,13 @@
   <ion-grid>
     <ion-row class="social-midia">
       <ion-col>
-        <img src="../assets/imgs/icone-facebook.png" color="main" class="icon-social-midia right">
+        <img src="../assets/imgs/icone-facebook.png" color="main" class="icon-social-midia right" (click)="openWebPage('https://www.facebook.com/AvecBrasil/')">
       </ion-col>
       <ion-col>
-        <img src="../assets/imgs/icone-linkedin.png" color="main" class="icon-social-midia center">
+        <img src="../assets/imgs/icone-linkedin.png" color="main" class="icon-social-midia center" (click)="openWebPage('https://www.linkedin.com/company/3271088/')">
       </ion-col>
       <ion-col>
-        <img src="../assets/imgs/icone-instagram.png" color="main" class="icon-social-midia left">
+        <img src="../assets/imgs/icone-instagram.png" color="main" class="icon-social-midia left" (click)="openWebPage('https://www.instagram.com/avecbrasil/')">
       </ion-col> 
     </ion-row>
   </ion-grid>

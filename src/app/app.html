@@ -9,16 +9,16 @@
 
   <ion-content class="nav-content">
     <ion-list class="item-menu">
-      <button (click)="openPage(HomePage)">
+      <button menuClose (click)="irHome()">
         <strong>Home</strong>
       </button>
 
-      <button (click)="openPage(SobrePage)">
+      <button menuClose (click)="irSobre()">
         <strong>Sobre</strong>
       </button>
 
-      <button>
-        <strong><a href="https://avecbrasil.com.br/" target="_blank">Site</a></strong>
+      <button (click)="openWebPage('https://avecbrasil.com.br/')">
+        <strong>Site</strong>
       </button>
     </ion-list>
   </ion-content>

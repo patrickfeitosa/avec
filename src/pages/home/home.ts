@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 import { ServiceProvider} from '../../providers/service/service';
 
@@ -11,7 +12,9 @@ export class HomePage {
 
   	gallery: any[];
 
-  	constructor(public navCtrl: NavController, public service: ServiceProvider) {
+    url:string;
+
+  	constructor(public navCtrl: NavController, public service: ServiceProvider, private inAppBrowser: InAppBrowser) {
   		this.getData();
   	}	
 
@@ -22,4 +25,10 @@ export class HomePage {
   			err => console.log(err)
   		);
   	}
+
+    //Abertura de links externos
+    openWebPage(url){
+        const browser = this.inAppBrowser.create(url);
+        browser.show();
+    }
 }
